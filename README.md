@@ -31,7 +31,7 @@ ___
 - ``systemctl start prometheus``
 11. Перейти по адресу http://localhost:9090 (по умолчанию)
 ___
-###Node_exporter
+### Node_exporter
 Позволяет измерять различные ресурсы машины, такие как использование памяти, диска и процессора
 #### Установка
 
@@ -58,5 +58,5 @@ $ systemctl status node_exporter
 
 ___
 
-###Alertmanager
+### Alertmanager
 ...
