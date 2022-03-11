@@ -5,6 +5,7 @@ ___
 ``Node_exporter``
 ``Alertmanager``
 ``Client_golang``
+``Pushgateway``
 ___
 ### Prometheus - сервер запрашиваюший метрики различных сервисов 
 #### Установка
