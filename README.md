@@ -35,3 +35,28 @@ ___
 Позволяет измерять различные ресурсы машины, такие как использование памяти, диска и процессора
 #### Установка
 
+``Скачиваем`` [билд](https://github.com/prometheus/node_exporter/releases "https://github.com/prometheus/node_exporter/releases")
+
+```$ wget https://github.com/.../node_exporter-0.18.1.linux-amd64.tar.gz
+$ tar xf node_exporter-*.tar.gz
+$ cd node_exporter-*
+$ cp node_exporter /usr/local/bin
+$ useradd --no-create-home --home-dir / --shell /bin/false node_exporter
+```
+Создаём символьную ссылку
+
+```sudo ln ./node_exporter.service /etc/systemd/system/node_exporter.service```
+
+Запускаем
+```$ systemctl daemon-reload
+$ systemctl start node_exporter
+$ systemctl status node_exporter
+```
+Тест
+
+``curl -s http://localhost:9100/metrics`` (Увидим множество данных о железе)
+
+___
+
+###Alertmanager
+...
