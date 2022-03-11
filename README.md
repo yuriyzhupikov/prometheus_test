@@ -10,7 +10,9 @@ ___
 #### Установка
 1. ``git clone repo``
 2. Находим билд под свою платформу (например linux-amd64) `` https://github.com/prometheus/prometheus/releases``
-3. Исполняемы файлы перемещаем в ``/var/local/bin``
+3. Скачиваем билд``wget <path_to_build>``
+4. Разархивируем ``tar -xf prometheus-*.tar.gz``
+5. Исполняемы файлы перемещаем в ``/var/local/bin``
 - ``cd prometheus-*``
 - ``cp prometheus promtool /usr/local/bin``
 - ``mkdir /etc/prometheus /var/lib/prometheus``
